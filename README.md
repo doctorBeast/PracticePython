@@ -1,2 +1,1 @@
-# git_tutotial
-learning github/git from nodeschool.io
+This file contains the solution to the forked challenges repository in my account.
