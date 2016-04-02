@@ -1,1 +1,1 @@
-##In easy9 there has been a bug found. the 'corresponding_list' has to be rearranged with the sorting of the 'lis' that contains strings
+##In easy9 there is a bug. if the string inputed is in Capital letters then the returned string will be in small letters . The sorting function does not work properly with capital and small letters together because it sorts according to the ASCII value of the characters.
