@@ -18,7 +18,6 @@ def sort(inlist):
 
     try:
         avg=sum/len(inlist)
-        print(avg)
     except ZeroDivisionError:
         pass
     while i<l :
