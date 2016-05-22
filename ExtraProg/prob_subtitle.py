@@ -2,6 +2,7 @@
 This code will help when the subtitles are not in sync with the audio.
 You have to judge by how much time is the subtitles getting delayed
 and give the time as input in this program.
+This code is only for .srt files.
 '''
 
 def chntime(string,add):
@@ -35,7 +36,7 @@ def chntime(string,add):
     return string
 
 
-fo=open('FILENAME.srt','r')#Give the location of the srt file.
+fo=open('English.srt','r')#Give the location of the srt file.
 data=fo.read()
 fo.close()
 datanew=data.split(sep='\n')
@@ -53,6 +54,6 @@ for i in range(len(datanew)):
 
 data="\n".join(datanew)
 
-fo=open('New.srt','w')#Give the location of the srt file that will be created.
+fo=open('English.srt','w')#Give the location of the srt file that will be created.
 fo.write(data)
 fo.close()
