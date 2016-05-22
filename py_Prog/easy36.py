@@ -4,17 +4,21 @@ It works with any random number of lockers and students.
 '''
 
 def togg(stud):
-    global info
-    global num_lock
-    global num_stud
+#    global info
+#   global num_lock
+#   global num_stud
 
     while True:
         i=1
-        while stud*i<=num_stud:
+        while stud*i<=num_lock:
             info[stud*i]=info[stud*i]+'0'
             i+=1
 
         break
+
+global num_lock
+global num_stud
+global info
 
 num_lock = int(input('What are the number of lockers: '))
 num_stud = int(input('What are the number of students: '))
@@ -23,8 +27,10 @@ info = {}
 for i in range(1,num_lock+1):
     info[i]='0'
 
+
 for i in range(1,num_stud+1):
     togg(i)
+
 total = 0
 for i in range(1,num_lock+1):
     if len(info[i])%2>0:
